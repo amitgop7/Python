@@ -1,14 +1,9 @@
-class Account:
+#5. Write a program to check whether a number is divisible by 2
+#and 3 both.
 
-    def __init__(self,balance):
-        self.__balance=balance
+num = int(input("Enter number: "))
 
-    def deposit(self,amount):
-        self.__balance+=amount
-
-    def getbalance(self):
-        return self.__balance
-
-bal=Account(30000)
-bal.deposit(3000)
-print(bal.getbalance())
+if num % 2 == 0 and num % 3 == 0:
+    print("Divisible by both 2 and 3")
+else:
+    print("Not divisible by both 2 and 3")
